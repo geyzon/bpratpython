@@ -2,7 +2,7 @@ from typing import Dict
 from fastapi import FastAPI
 from app.routers import routers_usuarios, routers_produtos
 
-MENSAGEM_HOME: str      = "Bem-vindo à API de Recomendação de Produtos"
+MENSAGEM_HOME: str = "Bem-vindo à API de Recomendação de Produtos"
 
 # Criando o App
 app = FastAPI()
