@@ -14,6 +14,7 @@ app.include_router(routers_produtos.router)
 
 # Iniciando o servidor
 
+
 @app.get("/")
 def home() -> Dict[str, str]:
     global MENSAGEM_HOME
