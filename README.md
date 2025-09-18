@@ -32,13 +32,13 @@ Este projeto é uma API criada com FastAPI para recomendação de produtos basea
 
 3. **Ative o ambiente virtual:**
    - No Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
+	 ```bash
+	 venv\Scripts\activate
+	 ```
    - No macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
+	 ```bash
+	 source venv/bin/activate
+	 ```
 
 4. **Instale as dependências:**
    ```bash
@@ -58,18 +58,18 @@ Este projeto é uma API criada com FastAPI para recomendação de produtos basea
 ```bash
 .
 ├── app
-│   ├── main.py              # Arquivo principal que inicia o FastAPI
-│   ├── models               # Modelos Pydantic usados pela API
+│   ├── main.py			  # Arquivo principal que inicia o FastAPI
+│   ├── models			   # Modelos Pydantic usados pela API
 │   │   ├── models_produtos.py
 │   │   └── models_usuarios.py
-│   ├── routers              # Arquivos contendo os roteadores de usuários e produtos
+│   ├── routers			  # Arquivos contendo os roteadores de usuários e produtos
 │   │   ├── routers_produtos.py
 │   │   └── routers_usuarios.py
 ├── tests
-│   └── test_api.py          # Testes para a API
-├── venv                     # Ambiente virtual
-├── README.md                # Instruções sobre o projeto
-└── requirements.txt         # Dependências do projeto
+│   └── test_api.py		  # Testes para a API
+├── venv					 # Ambiente virtual
+├── README.md				# Instruções sobre o projeto
+└── requirements.txt		 # Dependências do projeto
 ```
 
 ## Exemplos de Uso
@@ -79,7 +79,7 @@ Este projeto é uma API criada com FastAPI para recomendação de produtos basea
 - **POST /usuarios/**
   ```json
   {
-    "nome": "Usuário Teste"
+	"nome": "Usuário Teste"
   }
   ```
 
@@ -88,9 +88,9 @@ Este projeto é uma API criada com FastAPI para recomendação de produtos basea
 - **POST /produtos/**
   ```json
   {
-    "nome": "Produto Teste",
-    "categoria": "Eletrônicos",
-    "tags": ["tecnologia", "novo"]
+	"nome": "Produto Teste",
+	"categoria": "Eletrônicos",
+	"tags": ["tecnologia", "novo"]
   }
   ```
 
@@ -99,7 +99,7 @@ Este projeto é uma API criada com FastAPI para recomendação de produtos basea
 - **POST /historico_compras/{usuario_id}**
   ```json
   {
-    "produtos_ids": [1, 2]
+	"produtos_ids": [1, 2]
   }
   ```
 
@@ -108,8 +108,8 @@ Este projeto é uma API criada com FastAPI para recomendação de produtos basea
 - **POST /recomendacoes/{usuario_id}**
   ```json
   {
-    "categorias": ["Eletrônicos"],
-    "tags": ["novo"]
+	"categorias": ["Eletrônicos"],
+	"tags": ["novo"]
   }
   ```
 
